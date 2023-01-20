@@ -31,7 +31,7 @@ if (!function_exists('RB_setup')) {
     	 * If you're building a theme based on Laundry, use a find and replace
     	 * to change 'laundry' to the name of your theme in all the template files.
     	 */
-        load_theme_textdomain('rainbow', get_template_directory() . '/languages');
+        load_theme_textdomain('rainbow-lite', get_template_directory() . '/languages');
 
         // Set the default content width.
         $GLOBALS['content_width'] = 900;
@@ -80,6 +80,13 @@ if (!function_exists('RB_setup')) {
         //Support post format
         add_theme_support('post-formats', array('link', 'quote', 'video', 'audio'));
 
+        // Support align wide
+        add_theme_support("align-wide");
+
+        add_theme_support('register_block_pattern');
+
+        add_theme_support('register_block_style');	
+
         
     }
 }
@@ -103,8 +110,8 @@ endif;
 function RB_nav_menus()
 {
     register_nav_menus(array(
-        'primary_menu' =>  esc_html__('Primary Menu', 'rainbow'),
-        'footer_menu' =>  esc_html__('Footer Menu', 'rainbow'),
+        'primary_menu' =>  esc_html__('Primary Menu', 'rainbow-lite'),
+        'footer_menu' =>  esc_html__('Footer Menu', 'rainbow-lite'),
     ));
 }
 add_action('init', 'RB_nav_menus');
@@ -126,9 +133,9 @@ add_filter('nav_menu_css_class', 'RB_add_additional_class_on_li', 1, 3);
 function RB_sidebar()
 {
     register_sidebar(array(
-        'name' => esc_html__('Rainbow Sidebar', 'rainbow'),
+        'name' => esc_html__('Rainbow Sidebar', 'rainbow-lite'),
         'id'  => 'rainbow-sidebar',
-        'description' =>  esc_html__('Rainbow sidebar', 'rainbow'),
+        'description' =>  esc_html__('Rainbow sidebar', 'rainbow-lite'),
         'before_title' => '<h5 class="sidebar-title heading-5">',
         'after_title' => '</h5>',
         'before_widget' => '<div id="%1$s" class="sidebar-widget widget %2$s">',
@@ -136,36 +143,36 @@ function RB_sidebar()
     ));
 
     register_sidebar(array(
-        'name' => esc_html__('Footer One', 'rainbow'),
+        'name' => esc_html__('Footer One', 'rainbow-lite'),
         'id'  => 'footer1',
-        'description' =>  esc_html__('Use this sidebar for footer one.', 'rainbow'),
+        'description' =>  esc_html__('Use this sidebar for footer one.', 'rainbow-lite'),
         'before_title' => '<h5 class="footer-title heading-5">',
         'after_title' => '</h5>',
         'before_widget' => '<div id="%1$s" class="footer-widget sidebar-widget mb-60 widget %2$s">',
         'after_widget' => '</div>'
     ));
     register_sidebar(array(
-        'name' => esc_html__('Footer Two', 'rainbow'),
+        'name' => esc_html__('Footer Two', 'rainbow-lite'),
         'id'  => 'footer2',
-        'description' =>  esc_html__('Use this sidebar for footer two.', 'rainbow'),
+        'description' =>  esc_html__('Use this sidebar for footer two.', 'rainbow-lite'),
         'before_title' => '<h5 class="footer-title heading-5">',
         'after_title' => '</h5>',
         'before_widget' => '<div id="%1$s" class="footer-widget sidebar-widget mb-60 widget %2$s">',
         'after_widget' => '</div>'
     ));
     register_sidebar(array(
-        'name' => esc_html__('Footer Three', 'rainbow'),
+        'name' => esc_html__('Footer Three', 'rainbow-lite'),
         'id'  => 'footer3',
-        'description' =>  esc_html__('Use this sidebar for footer three.', 'rainbow'),
+        'description' =>  esc_html__('Use this sidebar for footer three.', 'rainbow-lite'),
         'before_title' => '<h5 class="footer-title heading-5">',
         'after_title' => '</h5>',
         'before_widget' => '<div id="%1$s" class="footer-widget sidebar-widget mb-60 widget %2$s">',
         'after_widget' => '</div>'
     ));
     register_sidebar(array(
-        'name' => esc_html__('Footer Four', 'rainbow'),
+        'name' => esc_html__('Footer Four', 'rainbow-lite'),
         'id'  => 'footer4',
-        'description' =>  esc_html__('Use this sidebar for footer four.', 'rainbow'),
+        'description' =>  esc_html__('Use this sidebar for footer four.', 'rainbow-lite'),
         'before_title' => '<h5 class="footer-title heading-5">',
         'after_title' => '</h5>',
         'before_widget' => '<div id="%1$s" class="footer-widget sidebar-widget mb-60 widget %2$s">',
@@ -249,7 +256,7 @@ if (!function_exists('RB_comments')) {
                 <div class="comment-meta">
                     <h6 class="author">
                         <?php echo get_comment_author_link(); ?>
-                        <span class="date"><?php echo esc_html(' ~ ' . RB_comments_time()); ?></span>
+                        <span class="date"><?php echo esc_html(' ~ ' . RB_comments_time(get_comment_ID(  ))); ?></span>
                     </h6>
 
                     <?php if ($comment->comment_approved == '0') : ?>
@@ -261,9 +268,9 @@ if (!function_exists('RB_comments')) {
                     </div>
                     <div class="comments-footer">
                         <span class="reply-link">
-                            <?php comment_reply_link(array_merge($args, array('reply_text' => esc_html__(' Reply', 'rainbow'), 'depth' => $depth, 'max_depth' => $args['max_depth'])), $comment->comment_ID); ?>
+                            <?php comment_reply_link(array_merge($args, array('reply_text' => esc_html__(' Reply', 'rainbow-lite'), 'depth' => $depth, 'max_depth' => $args['max_depth'])), $comment->comment_ID); ?>
                         </span>
-                        <?php edit_comment_link(__('Edit Comment', 'rainbow'), '<span><i class="far fa-edit"></i>', '</span>'); ?>
+                        <?php edit_comment_link(__('Edit Comment', 'rainbow-lite'), '<span><i class="far fa-edit"></i>', '</span>'); ?>
                     </div>
                 </div>
             </div>
@@ -274,10 +281,16 @@ if (!function_exists('RB_comments')) {
 }
 
 //Rainbow comments time
-function RB_comments_time()
+function RB_comments_time($comment_id)
 {
-    return sprintf(esc_html__('%s ago', '%s = human-readable time difference', 'rainbow'), human_time_diff(get_comment_time('U'), current_time('timestamp')));
+    $comment_time = get_comment_time('U', $comment_id);
+    $current_time = current_time('timestamp');
+    $time_diff = human_time_diff($comment_time, $current_time);
+    $time_text = esc_html__('%s ago', 'rainbow-lite');
+    $formatted_text = sprintf($time_text, $time_diff);
+    echo $formatted_text;
 }
+
 
 //jQuery notice
 function RB_jquery_migrate_notice()
@@ -293,14 +306,14 @@ add_action('init', 'RB_jquery_migrate_notice', 5);
 if (!function_exists('RB_author_posts_count')) {
     function RB_author_posts_count()
     {
-        $count_author_post = count_user_posts(get_the_author_meta('ID'));
-        if ($count_author_post < 2) {
-            printf($count_author_post . esc_html__(' post', 'rainbow'));
-        } else {
-            printf($count_author_post . esc_html__(' posts', 'rainbow'));
-        }
+        $author_id = get_the_author_meta('ID');
+        $post_count = count_user_posts($author_id);
+        $post_text = _n('%s post', '%s posts', $post_count, 'rainbow-lite');
+        $formatted_text = sprintf($post_text, number_format_i18n($post_count));
+        echo esc_html($formatted_text);
     }
 }
+
 
 if (!function_exists('RB_posts_count')) {
     function RB_posts_count()
@@ -309,18 +322,17 @@ if (!function_exists('RB_posts_count')) {
         return $count_author_post;
     }
 }
-add_shortcode('count', 'RB_posts_count');
 
 
 function RB_current_user_posts_count()
 {
-    $count_author_post = count_user_posts(get_current_user_id());
-    if ($count_author_post < 2) {
-        printf($count_author_post . esc_html__(' post', 'rainbow'));
-    } else {
-        printf($count_author_post . esc_html__(' posts', 'rainbow'));
-    }
+    $user_id = get_current_user_id();
+    $post_count = count_user_posts($user_id);
+    $post_text = _n('%s post', '%s posts', $post_count, 'rainbow-lite');
+    $formatted_text = sprintf($post_text, number_format_i18n($post_count));
+    echo esc_html($formatted_text);
 }
+
 
 function RB_get_categories()
 {
@@ -377,7 +389,7 @@ if (!function_exists('search_result_count')) {
         return $wp_query->found_posts;
     }
 }
-add_shortcode('search_count', 'search_result_count');
+
 
 if (!function_exists('RB_get_search_query')) {
     function RB_get_search_query()
@@ -386,7 +398,6 @@ if (!function_exists('RB_get_search_query')) {
         return $RB_search_query;
     }
 }
-add_shortcode('search_query', 'RB_get_search_query');
 
 
 function RB_tag_cloud()
@@ -409,7 +420,6 @@ function RB_tag_cloud()
 
     return $tag_string;
 }
-add_shortcode('RB_popular_tags', 'RB_tag_cloud');
 add_filter('widget_text', 'do_shortcode');
 
 
@@ -441,34 +451,6 @@ function RB_track_post_views($post_id)
 }
 
 add_action('wp_head', 'RB_track_post_views');
-remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
-
-
-
-function RB_merlin_import_files()
-{
-    return array(
-        array(
-            'import_file_name'           => 'Demo Import',
-            'import_file_url'            => esc_url(get_template_directory_uri() . '/inc/demo-content/demo-content.xml'),
-            'import_widget_file_url'     => 'https://raw.githubusercontent.com/akashmdiu/political-demo-content/master/demo-widget.wie',
-            'import_customizer_file_url' => 'https://raw.githubusercontent.com/akashmdiu/political-demo-content/master/demo-customization.dat',
-
-            'import_preview_image_url'   => 'https://github.com/akashmdiu/political-demo-content/blob/master/demo.png',
-            'import_notice'              => __('A special note for this import.', 'your-textdomain'),
-            'preview_url'                => 'wp-applin.themeix.com',
-        ),
-    );
-}
-add_filter('merlin_import_files', 'RB_merlin_import_files');
-
-function RB_welcome_page()
-{
-    if (is_admin() && isset($_GET['activated'])) {
-        wp_redirect('themes.php?page=getting-started');
-    }
-}
-RB_welcome_page();
 
 
 include_once('inc/hooks.php');

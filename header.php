@@ -10,17 +10,19 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open();  ?>
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'rainbow-lite'); ?></a>
     <?php get_template_part('template-parts/search-modal'); ?>
 
 
-    <?php 
-        if(get_theme_mod('RB_preloader_settings', '0' == '1')):
-            get_template_part('template-parts/preloader'); 
-        endif;
+    <?php
+    if (get_theme_mod('RB_preloader_settings', '0' == '1')) :
+        get_template_part('template-parts/preloader');
+    endif;
     ?>
 
     <!-- ========================= header start ========================= -->
     <header class="header navbar-area">
+
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">

@@ -60,46 +60,12 @@ function RB_register_required_plugins()
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
     $plugins = array(
-
-        array(
-            'name' => esc_html__('Elementor Page Builder', 'rainbow'),
-            'slug' => 'elementor',
-            'required' => false,
-
-        ),
-        array(
-            'name' => esc_html__('Contact Form 7', 'rainbow'),
-            'slug' => 'contact-form-7',
-            'required' => false,
-        ),
         
         array(
-            'name' => esc_html__('Kirki Customizer Framework', 'rainbow'),
+            'name' => esc_html__('Kirki Customizer Framework', 'rainbow-lite'),
             'slug' => 'kirki',
             'required' => false,
         ),
-
-        array(
-            'name' => esc_html__('Advanced Custom Fields', 'rainbow'),
-            'slug' => 'advanced-custom-fields',
-            'required' => false,
-        ),
-        array(
-            'name' => esc_html__('WooCommerce', 'rainbow'),
-            'slug' => 'woocommerce',
-            'required' => false,
-        ),
-        // array(
-        //     'name' => esc_html__('RB Core', 'rainbow'),
-        //     'slug' => 'RB_core',
-        //     'required' => false,
-        // ),
-        array(
-            'name' => esc_html__('One Click Demo Import', 'rainbow'),
-            'slug' => 'one-click-demo-import',
-            'required' => false,
-        ),
-
     );
 
     /*

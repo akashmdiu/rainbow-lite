@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
-Theme Name: Rainbow
-Theme URI: https://themeix.com/wordpress/rainbow
+Theme Name: Rainbow Lite
+Theme URI: https://github.com/akashmdiu/rainbow-lite
 Author: Akash
 Author URI: https://bprogrammer.net/
 Description: Rainbow is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Rainbow elevates your portfolio, business website, or personal blog.
@@ -14,6 +14,54 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rainbow-lite
 Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
 
-Rainbow WordPress Theme, (C) 2020 bprogrammer.net
-Rainbow is distributed under the terms of the GNU GPL.
+Rainbow Lite WordPress Theme, (C) 2023 bprogrammer.net
+Rainbow Lite is distributed under the terms of the GNU GPL.
 */
+
+.modal-search .modal-search-content {
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+.gallery-caption {
+    display: block;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+a:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    border-color: #aaa #bbb #bbb;
+    border: 1px solid;
+
+}

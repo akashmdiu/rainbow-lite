@@ -1,7 +1,7 @@
 <?php
 /**
  * Theme Customizer
- * @package themeix
+ * @package rainbow
  */
 
 /**

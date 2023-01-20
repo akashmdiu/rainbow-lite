@@ -31,9 +31,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="copyright-area text-center">
-                    <p><?php echo esc_html__('Copyright©', 'rainbow-lite'); ?><script>
-                            document.write(new Date().getFullYear())
-                        </script>
+                    <p><?php echo esc_html__('Copyright©', 'rainbow-lite'); ?> <?php echo esc_html(date("Y")); ?>
     <?php do_action('display_akash_name'); ?> <?php echo esc_html__(' All rights to reserved ', 'rainbow-lite'); ?></p>
                 </div>
             </div>

@@ -19,41 +19,37 @@
 
                     </div>
 
-                    
+
                     <div class="search-modal-extension ">
-                        <h4 class="mb-3">Top Tags</h4>
-                        <div class="search-suggestions mb-4 top__tags">
-                            <?php echo do_shortcode('[RB_popular_tags]'); ?>
-                        </div>
-                        <h4 class="mb-3">Picked for you</h4>
-                        <div class="row">
-                            <?php  
-                                $popular_post_args = array(
-                                    'meta_key'  => 'post_views_count', 
-                                    'orderby'    => 'meta_value_num', 
-                                    'order'      => 'DESC',
-                                    'ignore_sticky_posts' => 1,
-                                    'posts_per_page' => 5 
-                                );
-                                $popular_posts = new WP_Query( $popular_post_args );
-                            ?>
-                            <?php if($popular_posts->have_posts()): ?>
+                        <?php if (!empty(RB_tag_cloud())) : ?>
+                            <h4 class="mb-3"><?php echo esc_html__('Top Tags', 'rainbow-lite'); ?></h4>
+                            <div class="search-suggestions mb-4 top__tags">
+                                <?php echo RB_tag_cloud(); ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php
+                        $popular_post_args = array(
+                            'meta_key'  => 'post_views_count',
+                            'orderby'    => 'meta_value_num',
+                            'order'      => 'DESC',
+                            'ignore_sticky_posts' => 1,
+                            'posts_per_page' => 5
+                        );
+                        $popular_posts = new WP_Query($popular_post_args);
+                        ?>
+                        <?php if ($popular_posts->have_posts()) : ?>
+                            <h4 class="mb-3"><?php echo esc_html__('Picked for you', 'rainbow-lite'); ?></h4>
+                            <div class="row">
                                 <?php while ($popular_posts->have_posts()) : $popular_posts->the_post(); ?>
                                     <div class="col-md-6 col-lg-4">
                                         <?php get_template_part('/template-parts/search-block-card'); ?>
                                     </div>
                                 <?php endwhile; ?>
-                            <?php endif; ?>
-                        </div>
+                            </div>
+                        <?php endif; ?>
                     </div>
 
-                </div>
-                <div class="rainbow-search-footer">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="fas fa-sort-alpha-down"></i><?php echo esc_html__('DSC', 'rainbow-lite'); ?></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fas fa-sort-alpha-up"></i><?php echo esc_html__('ASC', 'rainbow-lite'); ?></a></li>
-                        <li class="list-inline-item footer__last_element"><a href="#"><i class="fas fa-enter"></i><?php echo esc_html__('Enter', 'rainbow-lite'); ?></a></li>
-                    </ul>
                 </div>
             </div>
         </div>

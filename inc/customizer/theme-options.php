@@ -33,38 +33,38 @@ function post_categories()
 
 Kirki::add_panel('general_options', array(
 	'priority'    => 1,
-	'title'       => esc_html__('General Settings', 'rainbow'),
+	'title'       => esc_html__('General Settings', 'rainbow-lite'),
 ));
 
 Kirki::add_panel('header_options', array(
 	'priority'    => 2,
-	'title'       => esc_html__('Header Settings', 'rainbow'),
+	'title'       => esc_html__('Header Settings', 'rainbow-lite'),
 ));
 
 
 Kirki::add_panel('blog_options', array(
 	'priority'    => 3,
-	'title'       => esc_html__('Blog Settings', 'rainbow'),
+	'title'       => esc_html__('Blog Settings', 'rainbow-lite'),
 ));
 
 Kirki::add_panel('RB_page_options', array(
 	'priority'    => 4,
-	'title'       => esc_html__('Page Settings', 'rainbow'),
+	'title'       => esc_html__('Page Settings', 'rainbow-lite'),
 ));
 
 Kirki::add_panel('footer_options', array(
 	'priority'    => 5,
-	'title'       => esc_html__('Footer Settings', 'rainbow'),
+	'title'       => esc_html__('Footer Settings', 'rainbow-lite'),
 ));
 
 Kirki::add_panel('color_options', array(
 	'priority'    => 6,
-	'title'       => esc_html__('Color Settings', 'rainbow'),
+	'title'       => esc_html__('Color Settings', 'rainbow-lite'),
 ));
 
 Kirki::add_panel('typography', array(
 	'priority'    => 7,
-	'title'       => esc_html__('Typograhy Settings', 'rainbow'),
+	'title'       => esc_html__('Typograhy Settings', 'rainbow-lite'),
 ));
 
 
@@ -78,17 +78,17 @@ Kirki::add_panel('typography', array(
 //=== Start general section ===//
 
 Kirki::add_section('RB_global_page_layout', array(
-	'title'       => esc_html__('Layout', 'rainbow'),
+	'title'       => esc_html__('Layout', 'rainbow-lite'),
 	'priority'    => 1,
 	'panel'       => 'general_options',
 ));
 Kirki::add_section('RB_preloader', array(
-	'title'       => esc_html__('Preloader', 'rainbow'),
+	'title'       => esc_html__('Preloader', 'rainbow-lite'),
 	'priority'    => 190,
 	'panel'       => 'general_options',
 ));
 Kirki::add_section('back_to_top', array(
-	'title'       => esc_html__('Scroll Back to Top', 'rainbow'),
+	'title'       => esc_html__('Scroll Back to Top', 'rainbow-lite'),
 	'priority'    => 195,
 	'panel'       => 'general_options',
 ));
@@ -96,22 +96,22 @@ Kirki::add_section('back_to_top', array(
 
 //=== Start blog section ===//
 Kirki::add_section('RB_blog_post_query', array(
-	'title'       => esc_html__('Query', 'rainbow'),
+	'title'       => esc_html__('Query', 'rainbow-lite'),
 	'priority'    => 5,
 	'panel'       => 'blog_options',
 ));
 Kirki::add_section('RB_blog_post_design', array(
-	'title'       => esc_html__('Blog Design', 'rainbow'),
+	'title'       => esc_html__('Blog Design', 'rainbow-lite'),
 	'priority'    => 7,
 	'panel'       => 'blog_options',
 ));
 Kirki::add_section('RB_blog_footer_section', array(
-	'title'       => esc_html__('Blog Footer', 'rainbow'),
+	'title'       => esc_html__('Blog Footer', 'rainbow-lite'),
 	'priority'    => 10,
 	'panel'       => 'blog_options',
 ));
 Kirki::add_section('RB_excerpt_limit', array(
-	'title'       => esc_html__('Excerpt Limit', 'rainbow'),
+	'title'       => esc_html__('Excerpt Limit', 'rainbow-lite'),
 	'priority'    => 15,
 	'panel'       => 'blog_options',
 ));
@@ -119,7 +119,7 @@ Kirki::add_section('RB_excerpt_limit', array(
 
 //=== Start header section ===//
 Kirki::add_section('site_brand', array(
-	'title'       => esc_html__('Site Brand', 'rainbow'),
+	'title'       => esc_html__('Site Brand', 'rainbow-lite'),
 	'priority'    => 5,
 	'panel'       => 'header_options',
 ));
@@ -127,36 +127,36 @@ Kirki::add_section('site_brand', array(
 
 //=== Start page section ===//
 Kirki::add_section('RB_single_page', array(
-	'title'       => esc_html__('Single Page', 'rainbow'),
+	'title'       => esc_html__('Single Page', 'rainbow-lite'),
 	'priority'    => 1,
 	'panel'       => 'RB_page_options',
 ));
 Kirki::add_section('RB_author_page', array(
-	'title'       => esc_html__('Author Page', 'rainbow'),
+	'title'       => esc_html__('Author Page', 'rainbow-lite'),
 	'priority'    => 5,
 	'panel'       => 'RB_page_options',
 ));
 
 Kirki::add_section('RB_category_page', array(
-	'title'       => esc_html__('Category Page', 'rainbow'),
+	'title'       => esc_html__('Category Page', 'rainbow-lite'),
 	'priority'    => 7,
 	'panel'       => 'RB_page_options',
 ));
 
 Kirki::add_section('RB_tag_page', array(
-	'title'       => esc_html__('Tag Page', 'rainbow'),
+	'title'       => esc_html__('Tag Page', 'rainbow-lite'),
 	'priority'    => 9,
 	'panel'       => 'RB_page_options',
 ));
 
 Kirki::add_section('RB_archive_page', array(
-	'title'       => esc_html__('Archive Page', 'rainbow'),
+	'title'       => esc_html__('Archive Page', 'rainbow-lite'),
 	'priority'    => 11,
 	'panel'       => 'RB_page_options',
 ));
 
 Kirki::add_section('RB_search_page', array(
-	'title'       => esc_html__('Search Page', 'rainbow'),
+	'title'       => esc_html__('Search Page', 'rainbow-lite'),
 	'priority'    => 13,
 	'panel'       => 'RB_page_options',
 ));
@@ -164,27 +164,27 @@ Kirki::add_section('RB_search_page', array(
 
 //=== Start typography section ===//
 Kirki::add_section('body', array(
-	'title'       => esc_html__('Body', 'rainbow'),
+	'title'       => esc_html__('Body', 'rainbow-lite'),
 	'priority'    => 1,
 	'panel'       => 'typography',
 ));
 Kirki::add_section('page_content', array(
-	'title'       => esc_html__('Page Content', 'rainbow'),
+	'title'       => esc_html__('Page Content', 'rainbow-lite'),
 	'priority'    => 3,
 	'panel'       => 'typography',
 ));
 Kirki::add_section('heading', array(
-	'title'       => esc_html__('Heading', 'rainbow'),
+	'title'       => esc_html__('Heading', 'rainbow-lite'),
 	'priority'    => 5,
 	'panel'       => 'typography',
 ));
 Kirki::add_section('navbar', array(
-	'title'       => esc_html__('Navbar', 'rainbow'),
+	'title'       => esc_html__('Navbar', 'rainbow-lite'),
 	'priority'    => 7,
 	'panel'       => 'typography',
 ));
 Kirki::add_section('post_card', array(
-	'title'       => esc_html__('Post Card', 'rainbow'),
+	'title'       => esc_html__('Post Card', 'rainbow-lite'),
 	'priority'    => 11,
 	'panel'       => 'typography',
 ));
@@ -192,17 +192,17 @@ Kirki::add_section('post_card', array(
 
 //=== Start footer section ===//
 Kirki::add_section('RB_footer_column', array(
-	'title'       => esc_html__('Footer Widget Layout', 'rainbow'),
+	'title'       => esc_html__('Footer Widget Layout', 'rainbow-lite'),
 	'priority'    => 5,
 	'panel'       => 'footer_options',
 ));
 Kirki::add_section('footer_copyright', array(
-	'title'       => esc_html__('Footer Copyright', 'rainbow'),
+	'title'       => esc_html__('Footer Copyright', 'rainbow-lite'),
 	'priority'    => 10,
 	'panel'       => 'footer_options',
 ));
 Kirki::add_section('footer_subscribe', array(
-	'title'       => esc_html__('Subscribe', 'rainbow'),
+	'title'       => esc_html__('Subscribe', 'rainbow-lite'),
 	'priority'    => 15,
 	'panel'       => 'footer_options',
 ));
@@ -219,7 +219,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-image',
 		'settings'    => 'global_page_layout',
-		'label'       => esc_html__('Global Page Layout', 'rainbow'),
+		'label'       => esc_html__('Global Page Layout', 'rainbow-lite'),
 		'section'     => 'RB_global_page_layout',
 		'description'    => 'Set the page layout globaly',
 		'default'     => '1',
@@ -239,7 +239,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'toggle',
 		'settings'    => 'RB_preloader_settings',
-		'label'       => esc_html__('Preloader', 'rainbow'),
+		'label'       => esc_html__('Preloader', 'rainbow-lite'),
 		'section'     => 'RB_preloader',
 		'default'     => '1',
 		'priority'    => 1,
@@ -251,14 +251,14 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-buttonset',
 		'settings'    => 'RB_choose_preloader',
-		'label'       => esc_html__('Choose Preloader', 'rainbow'),
+		'label'       => esc_html__('Choose Preloader', 'rainbow-lite'),
 		'section'     => 'RB_preloader',
-		'description' => esc_html__('Choose your theme preloader', 'rainbow'),
+		'description' => esc_html__('Choose your theme preloader', 'rainbow-lite'),
 		'default'     => 'loader_01',
 		'priority'    => 2,
 		'choices'     => array(
-			'loader_01'   => esc_html__('Loader 01', 'rainbow'),
-			'loader_02' => esc_html__('Loader 02', 'rainbow'),
+			'loader_01'   => esc_html__('Loader 01', 'rainbow-lite'),
+			'loader_02' => esc_html__('Loader 02', 'rainbow-lite'),
 		),
 		'active_callback' => array(
 			array(
@@ -278,7 +278,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'toggle',
 		'settings'    => 'back_to_top',
-		'label'       => esc_html__('Scroll Back to Top', 'rainbow'),
+		'label'       => esc_html__('Scroll Back to Top', 'rainbow-lite'),
 		'section'     => 'back_to_top',
 		'default'     => '1',
 		'priority'    => 10,
@@ -292,9 +292,9 @@ Kirki::add_field(
 	array(
 		'type'        => 'select',
 		'settings'    => 'RB_post_type_query',
-		'label'       => esc_html__('Post Type', 'rainbow'),
+		'label'       => esc_html__('Post Type', 'rainbow-lite'),
 		'section'     => 'RB_blog_post_query',
-		'placeholder' => esc_html__('Select', 'rainbow'),
+		'placeholder' => esc_html__('Select', 'rainbow-lite'),
 		'priority'    => 5,
 		'multiple'	   => 999,
 		'choices'     => $RB_post_type
@@ -306,9 +306,9 @@ Kirki::add_field(
 	array(
 		'type'        => 'select',
 		'settings'    => 'RB_display_post_category',
-		'label'       => esc_html__('Category', 'rainbow'),
+		'label'       => esc_html__('Category', 'rainbow-lite'),
 		'section'     => 'RB_blog_post_query',
-		'placeholder' => esc_html__('Select', 'rainbow'),
+		'placeholder' => esc_html__('Select', 'rainbow-lite'),
 		'multiple'	   => 999,
 		'priority'    => 10,
 		'choices'     => post_categories()
@@ -320,9 +320,9 @@ Kirki::add_field(
 	array(
 		'type'        => 'number',
 		'settings'    => 'RB_post_per_page',
-		'label'       => esc_html__('Post per page', 'rainbow'),
+		'label'       => esc_html__('Post per page', 'rainbow-lite'),
 		'section'     => 'RB_blog_post_query',
-		'description' => esc_html__('Input the number(-1 for all posts) for post per page.', 'rainbow'),
+		'description' => esc_html__('Input the number(-1 for all posts) for post per page.', 'rainbow-lite'),
 		'priority'    => 15,
 		'default'     => -1
 	)
@@ -332,9 +332,9 @@ Kirki::add_field(
 	array(
 		'type'        => 'select',
 		'settings'    => 'RB_post_order',
-		'label'       => esc_html__('Post Order ', 'rainbow'),
+		'label'       => esc_html__('Post Order ', 'rainbow-lite'),
 		'section'     => 'RB_blog_post_query',
-		'placeholder' => esc_html__('Select Post Order by', 'rainbow'),
+		'placeholder' => esc_html__('Select Post Order by', 'rainbow-lite'),
 		'priority'    => 20,
 		'choices'     => array(
 			'ASC' => 'ASC',
@@ -348,9 +348,9 @@ Kirki::add_field(
 	array(
 		'type'        => 'select',
 		'settings'    => 'RB_post_order_by',
-		'label'       => esc_html__('Post Order By', 'rainbow'),
+		'label'       => esc_html__('Post Order By', 'rainbow-lite'),
 		'section'     => 'RB_blog_post_query',
-		'placeholder' => esc_html__('Select Post Order', 'rainbow'),
+		'placeholder' => esc_html__('Select Post Order', 'rainbow-lite'),
 		'priority'    => 25,
 		'choices'     => array(
 			'none' => 'Default',
@@ -373,10 +373,10 @@ Kirki::add_field(
 	array(
 		'type'        => 'select',
 		'settings'    => 'RB_post_col',
-		'label'       => esc_html__('Post Column', 'rainbow'),
+		'label'       => esc_html__('Post Column', 'rainbow-lite'),
 		'section'     => 'RB_blog_post_design',
-		'placeholder' => esc_html__('Column', 'rainbow'),
-		'description' => esc_html__('Select your post column view', 'rainbow'),
+		'placeholder' => esc_html__('Column', 'rainbow-lite'),
+		'description' => esc_html__('Select your post column view', 'rainbow-lite'),
 		'choices'     => array(
 			'12' => 'Full Width',
 			'6' => 'Column View',
@@ -392,10 +392,10 @@ Kirki::add_field(
 	array(
 		'type'        => 'select',
 		'settings'    => 'RB_blog_post_design_settings',
-		'label'       => esc_html__('Blog design', 'rainbow'),
+		'label'       => esc_html__('Blog design', 'rainbow-lite'),
 		'section'     => 'RB_blog_post_design',
-		'placeholder' => esc_html__('Select Dlog Design', 'rainbow'),
-		'description' => esc_html__('Select your blog post design view', 'rainbow'),
+		'placeholder' => esc_html__('Select Dlog Design', 'rainbow-lite'),
+		'description' => esc_html__('Select your blog post design view', 'rainbow-lite'),
 		'priority'    => 2,
 		'choices'     => array(
 			'design_01' => 'Design 01',
@@ -412,8 +412,8 @@ Kirki::add_field(
 Kirki::add_field('RB_config', array(
 	'type'        => 'sortable',
 	'settings'    => 'RB_post_sortable_setting_01',
-	'label'       => esc_html__('Sort Post Section', 'rainbow'),
-	'description'       => esc_html__('You can sort, show, hide your post section', 'rainbow'),
+	'label'       => esc_html__('Sort Post Section', 'rainbow-lite'),
+	'description'       => esc_html__('You can sort, show, hide your post section', 'rainbow-lite'),
 	'section'     => 'RB_blog_post_design',
 	'default'     => array(
 		'RB_post_title',
@@ -422,10 +422,10 @@ Kirki::add_field('RB_config', array(
 		'RB_post_footer'
 	),
 	'choices'     => array(
-		'RB_post_title' => esc_html__('Post Title', 'rainbow'),
-		'RB_post_meta' => esc_html__('Post Meta', 'rainbow'),
-		'RB_post_excerpt' => esc_html__('Post Excerpt', 'rainbow'),
-		'RB_post_footer' => esc_html__('Post Footer', 'rainbow'),
+		'RB_post_title' => esc_html__('Post Title', 'rainbow-lite'),
+		'RB_post_meta' => esc_html__('Post Meta', 'rainbow-lite'),
+		'RB_post_excerpt' => esc_html__('Post Excerpt', 'rainbow-lite'),
+		'RB_post_footer' => esc_html__('Post Footer', 'rainbow-lite'),
 	),
 	'active_callback' => array(
 		array(
@@ -442,8 +442,8 @@ Kirki::add_field('RB_config', array(
 Kirki::add_field('RB_config', array(
 	'type'        => 'sortable',
 	'settings'    => 'RB_post_sortable_setting_02',
-	'label'       => esc_html__('Sort Post Section', 'rainbow'),
-	'description'       => esc_html__('You can sort, show, hide your post section', 'rainbow'),
+	'label'       => esc_html__('Sort Post Section', 'rainbow-lite'),
+	'description'       => esc_html__('You can sort, show, hide your post section', 'rainbow-lite'),
 	'section'     => 'RB_blog_post_design',
 	'default'     => array(
 		'RB_post_title',
@@ -452,10 +452,10 @@ Kirki::add_field('RB_config', array(
 		'RB_post_footer'
 	),
 	'choices'     => array(
-		'RB_post_title' => esc_html__('Post Title', 'rainbow'),
-		'RB_post_meta' => esc_html__('Post Meta', 'rainbow'),
-		'RB_post_excerpt' => esc_html__('Post Excerpt', 'rainbow'),
-		'RB_post_footer' => esc_html__('Post Footer', 'rainbow'),
+		'RB_post_title' => esc_html__('Post Title', 'rainbow-lite'),
+		'RB_post_meta' => esc_html__('Post Meta', 'rainbow-lite'),
+		'RB_post_excerpt' => esc_html__('Post Excerpt', 'rainbow-lite'),
+		'RB_post_footer' => esc_html__('Post Footer', 'rainbow-lite'),
 	),
 	'active_callback' => array(
 		array(
@@ -472,8 +472,8 @@ Kirki::add_field('RB_config', array(
 Kirki::add_field('RB_config', array(
 	'type'        => 'sortable',
 	'settings'    => 'RB_post_sortable_setting_03',
-	'label'       => esc_html__('Sort Post Section', 'rainbow'),
-	'description'       => esc_html__('You can sort, show, hide your post section', 'rainbow'),
+	'label'       => esc_html__('Sort Post Section', 'rainbow-lite'),
+	'description'       => esc_html__('You can sort, show, hide your post section', 'rainbow-lite'),
 	'section'     => 'RB_blog_post_design',
 	'default'     => array(
 		'RB_post_title',
@@ -482,10 +482,10 @@ Kirki::add_field('RB_config', array(
 		'RB_post_footer'
 	),
 	'choices'     => array(
-		'RB_post_title' => esc_html__('Post Title', 'rainbow'),
-		'RB_post_meta' => esc_html__('Post Meta', 'rainbow'),
-		'RB_post_excerpt' => esc_html__('Post Excerpt', 'rainbow'),
-		'RB_post_footer' => esc_html__('Post Footer', 'rainbow'),
+		'RB_post_title' => esc_html__('Post Title', 'rainbow-lite'),
+		'RB_post_meta' => esc_html__('Post Meta', 'rainbow-lite'),
+		'RB_post_excerpt' => esc_html__('Post Excerpt', 'rainbow-lite'),
+		'RB_post_footer' => esc_html__('Post Footer', 'rainbow-lite'),
 	),
 	'active_callback' => array(
 		array(
@@ -502,8 +502,8 @@ Kirki::add_field('RB_config', array(
 Kirki::add_field('RB_config', array(
 	'type'        => 'sortable',
 	'settings'    => 'RB_post_sortable_setting_04',
-	'label'       => esc_html__('Sort Post Section', 'rainbow'),
-	'description'       => esc_html__('You can sort, show, hide your post section', 'rainbow'),
+	'label'       => esc_html__('Sort Post Section', 'rainbow-lite'),
+	'description'       => esc_html__('You can sort, show, hide your post section', 'rainbow-lite'),
 	'section'     => 'RB_blog_post_design',
 	'default'     => array(
 		'RB_post_title',
@@ -512,10 +512,10 @@ Kirki::add_field('RB_config', array(
 		'RB_post_footer'
 	),
 	'choices'     => array(
-		'RB_post_title' => esc_html__('Post Title', 'rainbow'),
-		'RB_post_meta' => esc_html__('Post Meta', 'rainbow'),
-		'RB_post_excerpt' => esc_html__('Post Excerpt', 'rainbow'),
-		'RB_post_footer' => esc_html__('Post Footer', 'rainbow'),
+		'RB_post_title' => esc_html__('Post Title', 'rainbow-lite'),
+		'RB_post_meta' => esc_html__('Post Meta', 'rainbow-lite'),
+		'RB_post_excerpt' => esc_html__('Post Excerpt', 'rainbow-lite'),
+		'RB_post_footer' => esc_html__('Post Footer', 'rainbow-lite'),
 	),
 	'active_callback' => array(
 		array(
@@ -537,7 +537,7 @@ Kirki::add_field(
 	array(
 		'type'     => 'text',
 		'settings' => 'RB_post_excerpt_limit',
-		'label'    => esc_html__('Post Excerpt Limit', 'rainbow'),
+		'label'    => esc_html__('Post Excerpt Limit', 'rainbow-lite'),
 		'section'  => 'RB_excerpt_limit',
 		'default'  => 30,
 		'priority' => 1,
@@ -548,8 +548,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'toggle',
 		'settings'    => 'RB_excerpt_indicator_toggle',
-		'label'       => esc_html__('Excerpt Indicator', 'rainbow'),
-		'description' => esc_html__('You can show or hide excerpt indicator.', 'rainbow'),
+		'label'       => esc_html__('Excerpt Indicator', 'rainbow-lite'),
+		'description' => esc_html__('You can show or hide excerpt indicator.', 'rainbow-lite'),
 		'section'     => 'RB_excerpt_limit',
 		'default'     => '0',
 		'priority'    => 2,
@@ -560,7 +560,7 @@ Kirki::add_field(
 	array(
 		'type'     => 'text',
 		'settings' => 'RB_post_excerpt_indicator',
-		'label'    => esc_html__('Excerpt Indicator', 'rainbow'),
+		'label'    => esc_html__('Excerpt Indicator', 'rainbow-lite'),
 		'section'  => 'RB_excerpt_limit',
 		'default'  => ' [..]',
 		'priority' => 3,
@@ -581,8 +581,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'toggle',
 		'settings'    => 'RB_author_meta_toggle',
-		'label'       => esc_html__('Author Meta', 'rainbow'),
-		'description' => esc_html__('You can show or hide author meta.', 'rainbow'),
+		'label'       => esc_html__('Author Meta', 'rainbow-lite'),
+		'description' => esc_html__('You can show or hide author meta.', 'rainbow-lite'),
 		'section'     => 'RB_blog_footer_section',
 		'default'     => '1',
 		'priority'    => 1,
@@ -594,8 +594,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'slider',
 		'settings'    => 'RB_author_border_radius',
-		'label'       => esc_html__('Author Border Radius', 'rainbow'),
-		'description'       => esc_html__('Set your author img border radius', 'rainbow'),
+		'label'       => esc_html__('Author Border Radius', 'rainbow-lite'),
+		'description'       => esc_html__('Set your author img border radius', 'rainbow-lite'),
 		'section'     => 'RB_blog_footer_section',
 		'default'     => 50,
 		'priority'    => 2,
@@ -619,8 +619,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'toggle',
 		'settings'    => 'RB_readmore_toggle',
-		'label'       => esc_html__('Read More', 'rainbow'),
-		'description' => esc_html__('You can show or hide read more button.', 'rainbow'),
+		'label'       => esc_html__('Read More', 'rainbow-lite'),
+		'description' => esc_html__('You can show or hide read more button.', 'rainbow-lite'),
 		'section'     => 'RB_blog_footer_section',
 		'default'     => '1',
 		'priority'    => 3,
@@ -632,13 +632,13 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-buttonset',
 		'settings'    => 'RB_readmore_position',
-		'label'       => esc_html__('Readmore Position', 'rainbow'),
+		'label'       => esc_html__('Readmore Position', 'rainbow-lite'),
 		'section'     => 'RB_blog_footer_section',
 		'default'     => 'right',
 		'priority'    => 4,
 		'choices'     => array(
-			'left'   => esc_html__('Left', 'rainbow'),
-			'right' => esc_html__('Right', 'rainbow'),
+			'left'   => esc_html__('Left', 'rainbow-lite'),
+			'right' => esc_html__('Right', 'rainbow-lite'),
 		),
 		'active_callback' => array(
 			array(
@@ -657,9 +657,9 @@ Kirki::add_field(
 	array(
 		'type'     => 'text',
 		'settings' => 'RB_read_more_label',
-		'label'    => esc_html__('Read More Label', 'rainbow'),
+		'label'    => esc_html__('Read More Label', 'rainbow-lite'),
 		'section'  => 'RB_blog_footer_section',
-		'default'  => esc_html__('Read More', 'rainbow'),
+		'default'  => esc_html__('Read More', 'rainbow-lite'),
 		'priority' => 5,
 		'active_callback' => array(
 			array(
@@ -676,8 +676,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'toggle',
 		'settings'    => 'RB_footer_top_border',
-		'label'       => esc_html__('Footer Top border', 'rainbow'),
-		'description' => esc_html__('You can show or hide footer top border', 'rainbow'),
+		'label'       => esc_html__('Footer Top border', 'rainbow-lite'),
+		'description' => esc_html__('You can show or hide footer top border', 'rainbow-lite'),
 		'section'     => 'RB_blog_footer_section',
 		'default'     => '1',
 		'priority'    => 6,
@@ -689,8 +689,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'slider',
 		'settings'    => 'RB_footer_top_border_height',
-		'label'       => esc_html__('Footer Top border Height', 'rainbow'),
-		'description'       => esc_html__('Set your footer top border height', 'rainbow'),
+		'label'       => esc_html__('Footer Top border Height', 'rainbow-lite'),
+		'description'       => esc_html__('Set your footer top border height', 'rainbow-lite'),
 		'section'     => 'RB_blog_footer_section',
 		'default'     => 1,
 		'priority'    => 7,
@@ -718,8 +718,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'slider',
 		'settings'    => 'brand',
-		'label'       => esc_html__('Logo Brand Width(px)', 'rainbow'),
-		'description'       => esc_html__('You can set your header logo image width', 'rainbow'),
+		'label'       => esc_html__('Logo Brand Width(px)', 'rainbow-lite'),
+		'description'       => esc_html__('You can set your header logo image width', 'rainbow-lite'),
 		'section'     => 'site_brand',
 		'default'     => 200,
 		'choices'     => array(
@@ -738,7 +738,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-image',
 		'settings'    => 'RB_single_page_layout',
-		'label'       => esc_html__('Single Page Layout', 'rainbow'),
+		'label'       => esc_html__('Single Page Layout', 'rainbow-lite'),
 		'section'     => 'RB_single_page',
 		'default'     => '1',
 		'priority'    => 1,
@@ -757,13 +757,13 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-buttonset',
 		'settings'    => 'RB_author_meta_position',
-		'label'       => esc_html__('Author Meta Position', 'rainbow'),
+		'label'       => esc_html__('Author Meta Position', 'rainbow-lite'),
 		'section'     => 'RB_single_page',
 		'default'     => 'left',
 		'priority'    => 3,
 		'choices'     => array(
-			'left'   => esc_html__('Left', 'rainbow'),
-			'right' => esc_html__('Right', 'rainbow'),
+			'left'   => esc_html__('Left', 'rainbow-lite'),
+			'right' => esc_html__('Right', 'rainbow-lite'),
 		),
 	)
 );
@@ -772,8 +772,8 @@ Kirki::add_field(
 Kirki::add_field('RB_config', array(
 	'type'        => 'sortable',
 	'settings'    => 'RB_single_page_meta',
-	'label'       => esc_html__('Post Meta Sortable', 'rainbow'),
-	'description'       => esc_html__('You can sort, show, hide your post meta', 'rainbow'),
+	'label'       => esc_html__('Post Meta Sortable', 'rainbow-lite'),
+	'description'       => esc_html__('You can sort, show, hide your post meta', 'rainbow-lite'),
 	'section'     => 'RB_single_page',
 	'default'     => array(
 		'RB_post_share',
@@ -781,9 +781,9 @@ Kirki::add_field('RB_config', array(
 		'RB_post_print',
 	),
 	'choices'     => array(
-		'RB_post_share' => esc_html__('Post Share', 'rainbow'),
-		'RB_post_feedback' => esc_html__('Post Feedback', 'rainbow'),
-		'RB_post_print' => esc_html__('Post Print', 'rainbow'),
+		'RB_post_share' => esc_html__('Post Share', 'rainbow-lite'),
+		'RB_post_feedback' => esc_html__('Post Feedback', 'rainbow-lite'),
+		'RB_post_print' => esc_html__('Post Print', 'rainbow-lite'),
 	),
 	'priority'    => 5,
 ));
@@ -796,7 +796,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-image',
 		'settings'    => 'RB_author_page_layout',
-		'label'       => esc_html__('Author Page Layout', 'rainbow'),
+		'label'       => esc_html__('Author Page Layout', 'rainbow-lite'),
 		'section'     => 'RB_author_page',
 		'default'     => '1',
 		'priority'    => 1,
@@ -814,13 +814,13 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-buttonset',
 		'settings'    => 'author_banner_bg_settings',
-		'label'       => esc_html__('Page title BG', 'rainbow'),
+		'label'       => esc_html__('Page title BG', 'rainbow-lite'),
 		'section'     => 'RB_author_page',
 		'default'     => 'image',
 		'priority'    => 2,
 		'choices'     => array(
-			'image'   => esc_html__('Image', 'rainbow'),
-			'color' => esc_html__('Color', 'rainbow'),
+			'image'   => esc_html__('Image', 'rainbow-lite'),
+			'color' => esc_html__('Color', 'rainbow-lite'),
 		),
 
 	)
@@ -832,8 +832,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'image',
 		'settings'    => 'author_page_banner_bg_image',
-		'label'       => esc_html__('Banner Background', 'rainbow'),
-		'description'       => esc_html__('Upload page title background image', 'rainbow'),
+		'label'       => esc_html__('Banner Background', 'rainbow-lite'),
+		'description'       => esc_html__('Upload page title background image', 'rainbow-lite'),
 		'section'     => 'RB_author_page',
 		'default'     => '',
 		'priority'    => 3,
@@ -852,8 +852,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'author_page_banner_bg_overlay',
-		'label'       => esc_html__('Background Overlay', 'rainbow'),
-		'description'       => esc_html__('Set your page banner background overlay', 'rainbow'),
+		'label'       => esc_html__('Background Overlay', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page banner background overlay', 'rainbow-lite'),
 		'section'     => 'RB_author_page',
 		'default'     => '',
 		'priority'    => 4,
@@ -872,8 +872,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'author_page_banner_bg_color',
-		'label'       => esc_html__('Background Color', 'rainbow'),
-		'description'       => esc_html__('Set your page banner background color', 'rainbow'),
+		'label'       => esc_html__('Background Color', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page banner background color', 'rainbow-lite'),
 		'section'     => 'RB_author_page',
 		'default'     => '',
 		'priority'    => 5,
@@ -891,8 +891,8 @@ Kirki::add_field(
 Kirki::add_field('theme_config_id', array(
 	'type'        => 'slider',
 	'settings'    => 'RB_banner_padding',
-	'label'       => esc_html__('Banner Padding', 'rainbow'),
-	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow'),
+	'label'       => esc_html__('Banner Padding', 'rainbow-lite'),
+	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow-lite'),
 	'section'     => 'RB_author_page',
 	'default'     => 85,
 	'choices'     => array(
@@ -907,7 +907,7 @@ Kirki::add_field('RB_config', array(
 	'type'        => 'custom',
 	'settings'    => 'RB_author_heading_setting',
 	'section'     => 'RB_author_page',
-	'default'         => '<h3 style="padding:10px 0px; margin:0; border-bottom: 1px solid #e6d4d4;margin-top:15px;">' . __('Author Meta', 'rainbow') . '</h3>',
+	'default'         => '<h3 style="padding:10px 0px; margin:0; border-bottom: 1px solid #e6d4d4;margin-top:15px;">' . __('Author Meta', 'rainbow-lite') . '</h3>',
 	'priority'    => 5,
 ));
 
@@ -916,9 +916,9 @@ Kirki::add_field(
 	array(
 		'type'        => 'select',
 		'settings'    => 'author_img_width',
-		'label'       => esc_html__('Author Image Width', 'rainbow'),
+		'label'       => esc_html__('Author Image Width', 'rainbow-lite'),
 		'section'     => 'RB_author_page',
-		'placeholder' => esc_html__('Select', 'rainbow'),
+		'placeholder' => esc_html__('Select', 'rainbow-lite'),
 		'priority'    => 6,
 		'multiple'	   => 1,
 		'default'	  => '3',
@@ -937,10 +937,10 @@ Kirki::add_field(
 	array(
 		'type'     => 'textarea',
 		'settings' => 'RB_published_text_settings',
-		'label'    => esc_html__('Published Text Content', 'rainbow'),
+		'label'    => esc_html__('Published Text Content', 'rainbow-lite'),
 		'section'  => 'RB_author_page',
 		'default'  => esc_html('published [count] posts'),
-		'description'  => esc_html__('Set your author published text and use \'[count]\' for posts count', 'rainbow'),
+		'description'  => esc_html__('Set your author published text and use \'[count]\' for posts count', 'rainbow-lite'),
 		'priority' => 7,
 	)
 );
@@ -948,8 +948,8 @@ Kirki::add_field(
 Kirki::add_field('RB_config', array(
 	'type'        => 'sortable',
 	'settings'    => 'RB_author_meta',
-	'label'       => esc_html__('Author Meta Sortable', 'rainbow'),
-	'description'       => esc_html__('You can sort, show, hide your author meta', 'rainbow'),
+	'label'       => esc_html__('Author Meta Sortable', 'rainbow-lite'),
+	'description'       => esc_html__('You can sort, show, hide your author meta', 'rainbow-lite'),
 	'section'     => 'RB_author_page',
 	'default'     => array(
 		'published_text',
@@ -958,10 +958,10 @@ Kirki::add_field('RB_config', array(
 		'author_social_icon'
 	),
 	'choices'     => array(
-		'published_text' => esc_html__('Published Text', 'rainbow'),
-		'author_name' => esc_html__('Author Name', 'rainbow'),
-		'author_bio' => esc_html__('Author Bio', 'rainbow'),
-		'author_social_icon' => esc_html__('Author Social Icon', 'rainbow'),
+		'published_text' => esc_html__('Published Text', 'rainbow-lite'),
+		'author_name' => esc_html__('Author Name', 'rainbow-lite'),
+		'author_bio' => esc_html__('Author Bio', 'rainbow-lite'),
+		'author_social_icon' => esc_html__('Author Social Icon', 'rainbow-lite'),
 	),
 	'priority'    => 8,
 ));
@@ -975,7 +975,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-image',
 		'settings'    => 'RB_category_page_layout',
-		'label'       => esc_html__('Category Page Layout', 'rainbow'),
+		'label'       => esc_html__('Category Page Layout', 'rainbow-lite'),
 		'section'     => 'RB_category_page',
 		'default'     => '1',
 		'priority'    => 1,
@@ -993,13 +993,13 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-buttonset',
 		'settings'    => 'category_banner_bg_settings',
-		'label'       => esc_html__('Page title BG', 'rainbow'),
+		'label'       => esc_html__('Page title BG', 'rainbow-lite'),
 		'section'     => 'RB_category_page',
 		'default'     => 'image',
 		'priority'    => 3,
 		'choices'     => array(
-			'image'   => esc_html__('Image', 'rainbow'),
-			'color' => esc_html__('Color', 'rainbow'),
+			'image'   => esc_html__('Image', 'rainbow-lite'),
+			'color' => esc_html__('Color', 'rainbow-lite'),
 		),
 
 	)
@@ -1011,8 +1011,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'image',
 		'settings'    => 'category_page_banner_bg_image',
-		'label'       => esc_html__('Banner Background', 'rainbow'),
-		'description'       => esc_html__('Upload page title background image', 'rainbow'),
+		'label'       => esc_html__('Banner Background', 'rainbow-lite'),
+		'description'       => esc_html__('Upload page title background image', 'rainbow-lite'),
 		'section'     => 'RB_category_page',
 		'default'     => '',
 		'priority'    => 5,
@@ -1031,8 +1031,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'category_page_banner_bg_overlay',
-		'label'       => esc_html__('Background Overlay', 'rainbow'),
-		'description'       => esc_html__('Set your page title background overlay', 'rainbow'),
+		'label'       => esc_html__('Background Overlay', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page title background overlay', 'rainbow-lite'),
 		'section'     => 'RB_category_page',
 		'default'     => '',
 		'priority'    => 7,
@@ -1052,8 +1052,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'category_page_banner_bg_color',
-		'label'       => esc_html__('Background Color', 'rainbow'),
-		'description'       => esc_html__('Set your page title background color', 'rainbow'),
+		'label'       => esc_html__('Background Color', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page title background color', 'rainbow-lite'),
 		'section'     => 'RB_category_page',
 		'default'     => '',
 		'priority'    => 9,
@@ -1071,8 +1071,8 @@ Kirki::add_field(
 Kirki::add_field('theme_config_id', array(
 	'type'        => 'slider',
 	'settings'    => 'RB_cat_banner_padding',
-	'label'       => esc_html__('Banner Padding', 'rainbow'),
-	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow'),
+	'label'       => esc_html__('Banner Padding', 'rainbow-lite'),
+	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow-lite'),
 	'section'     => 'RB_category_page',
 	'default'     => 85,
 	'choices'     => array(
@@ -1090,7 +1090,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-image',
 		'settings'    => 'RB_tag_page_layout',
-		'label'       => esc_html__('Tag Page Layout', 'rainbow'),
+		'label'       => esc_html__('Tag Page Layout', 'rainbow-lite'),
 		'section'     => 'RB_tag_page',
 		'default'     => '1',
 		'priority'    => 1,
@@ -1108,13 +1108,13 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-buttonset',
 		'settings'    => 'tag_banner_bg_settings',
-		'label'       => esc_html__('Page title BG', 'rainbow'),
+		'label'       => esc_html__('Page title BG', 'rainbow-lite'),
 		'section'     => 'RB_tag_page',
 		'default'     => 'image',
 		'priority'    => 3,
 		'choices'     => array(
-			'image'   => esc_html__('Image', 'rainbow'),
-			'color' => esc_html__('Color', 'rainbow'),
+			'image'   => esc_html__('Image', 'rainbow-lite'),
+			'color' => esc_html__('Color', 'rainbow-lite'),
 		),
 
 	)
@@ -1126,8 +1126,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'image',
 		'settings'    => 'tag_page_banner_bg_image',
-		'label'       => esc_html__('Banner Background', 'rainbow'),
-		'description'       => esc_html__('Upload page title background image', 'rainbow'),
+		'label'       => esc_html__('Banner Background', 'rainbow-lite'),
+		'description'       => esc_html__('Upload page title background image', 'rainbow-lite'),
 		'section'     => 'RB_tag_page',
 		'default'     => '',
 		'priority'    => 5,
@@ -1145,8 +1145,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'tag_page_banner_bg_overlay',
-		'label'       => esc_html__('Background Overlay', 'rainbow'),
-		'description'       => esc_html__('Set your page title background overlay', 'rainbow'),
+		'label'       => esc_html__('Background Overlay', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page title background overlay', 'rainbow-lite'),
 		'section'     => 'RB_tag_page',
 		'default'     => '',
 		'priority'    => 7,
@@ -1166,8 +1166,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'tag_page_banner_bg_color',
-		'label'       => esc_html__('Background Color', 'rainbow'),
-		'description'       => esc_html__('Set your page title background color', 'rainbow'),
+		'label'       => esc_html__('Background Color', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page title background color', 'rainbow-lite'),
 		'section'     => 'RB_tag_page',
 		'default'     => '',
 		'priority'    => 9,
@@ -1184,8 +1184,8 @@ Kirki::add_field(
 Kirki::add_field('theme_config_id', array(
 	'type'        => 'slider',
 	'settings'    => 'RB_tag_banner_padding',
-	'label'       => esc_html__('Banner Padding', 'rainbow'),
-	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow'),
+	'label'       => esc_html__('Banner Padding', 'rainbow-lite'),
+	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow-lite'),
 	'section'     => 'RB_tag_page',
 	'default'     => 85,
 	'choices'     => array(
@@ -1203,7 +1203,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-image',
 		'settings'    => 'RB_archive_page_layout',
-		'label'       => esc_html__('Archive Page Layout', 'rainbow'),
+		'label'       => esc_html__('Archive Page Layout', 'rainbow-lite'),
 		'section'     => 'RB_archive_page',
 		'default'     => '1',
 		'priority'    => 1,
@@ -1221,13 +1221,13 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-buttonset',
 		'settings'    => 'archive_banner_bg_settings',
-		'label'       => esc_html__('Page title BG', 'rainbow'),
+		'label'       => esc_html__('Page title BG', 'rainbow-lite'),
 		'section'     => 'RB_archive_page',
 		'default'     => 'image',
 		'priority'    => 3,
 		'choices'     => array(
-			'image'   => esc_html__('Image', 'rainbow'),
-			'color' => esc_html__('Color', 'rainbow'),
+			'image'   => esc_html__('Image', 'rainbow-lite'),
+			'color' => esc_html__('Color', 'rainbow-lite'),
 		),
 
 	)
@@ -1239,8 +1239,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'image',
 		'settings'    => 'archive_page_banner_bg_image',
-		'label'       => esc_html__('Banner Background', 'rainbow'),
-		'description'       => esc_html__('Upload page title background image', 'rainbow'),
+		'label'       => esc_html__('Banner Background', 'rainbow-lite'),
+		'description'       => esc_html__('Upload page title background image', 'rainbow-lite'),
 		'section'     => 'RB_archive_page',
 		'default'     => '',
 		'priority'    => 5,
@@ -1259,8 +1259,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'archive_page_banner_bg_overlay',
-		'label'       => esc_html__('Background Overlay', 'rainbow'),
-		'description'       => esc_html__('Set your page title background overlay', 'rainbow'),
+		'label'       => esc_html__('Background Overlay', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page title background overlay', 'rainbow-lite'),
 		'section'     => 'RB_archive_page',
 		'default'     => '',
 		'priority'    => 7,
@@ -1279,8 +1279,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'archive_page_banner_bg_color',
-		'label'       => esc_html__('Background Color', 'rainbow'),
-		'description'       => esc_html__('Set your page title background color', 'rainbow'),
+		'label'       => esc_html__('Background Color', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page title background color', 'rainbow-lite'),
 		'section'     => 'RB_archive_page',
 		'default'     => '',
 		'priority'    => 9,
@@ -1297,8 +1297,8 @@ Kirki::add_field(
 Kirki::add_field('theme_config_id', array(
 	'type'        => 'slider',
 	'settings'    => 'RB_archive_banner_padding',
-	'label'       => esc_html__('Banner Padding', 'rainbow'),
-	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow'),
+	'label'       => esc_html__('Banner Padding', 'rainbow-lite'),
+	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow-lite'),
 	'section'     => 'RB_archive_page',
 	'default'     => 85,
 	'choices'     => array(
@@ -1317,7 +1317,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-image',
 		'settings'    => 'RB_search_page_layout',
-		'label'       => esc_html__('Search Page Layout', 'rainbow'),
+		'label'       => esc_html__('Search Page Layout', 'rainbow-lite'),
 		'section'     => 'RB_search_page',
 		'default'     => '1',
 		'priority'    => 1,
@@ -1335,13 +1335,13 @@ Kirki::add_field(
 	array(
 		'type'        => 'radio-buttonset',
 		'settings'    => 'search_banner_bg_settings',
-		'label'       => esc_html__('Page title BG', 'rainbow'),
+		'label'       => esc_html__('Page title BG', 'rainbow-lite'),
 		'section'     => 'RB_search_page',
 		'default'     => 'image',
 		'priority'    => 3,
 		'choices'     => array(
-			'image'   => esc_html__('Image', 'rainbow'),
-			'color' => esc_html__('Color', 'rainbow'),
+			'image'   => esc_html__('Image', 'rainbow-lite'),
+			'color' => esc_html__('Color', 'rainbow-lite'),
 		),
 
 	)
@@ -1353,8 +1353,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'image',
 		'settings'    => 'search_page_banner_bg_image',
-		'label'       => esc_html__('Banner Background', 'rainbow'),
-		'description'       => esc_html__('Upload page title background image', 'rainbow'),
+		'label'       => esc_html__('Banner Background', 'rainbow-lite'),
+		'description'       => esc_html__('Upload page title background image', 'rainbow-lite'),
 		'section'     => 'RB_search_page',
 		'default'     => '',
 		'priority'    => 5,
@@ -1372,8 +1372,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'search_page_banner_bg_overlay',
-		'label'       => esc_html__('Background Overlay', 'rainbow'),
-		'description'       => esc_html__('Set your page title background overlay', 'rainbow'),
+		'label'       => esc_html__('Background Overlay', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page title background overlay', 'rainbow-lite'),
 		'section'     => 'RB_search_page',
 		'default'     => '',
 		'priority'    => 7,
@@ -1393,8 +1393,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'search_page_banner_bg_color',
-		'label'       => esc_html__('Background Color', 'rainbow'),
-		'description'       => esc_html__('Set your page title background color', 'rainbow'),
+		'label'       => esc_html__('Background Color', 'rainbow-lite'),
+		'description'       => esc_html__('Set your page title background color', 'rainbow-lite'),
 		'section'     => 'RB_search_page',
 		'default'     => '',
 		'priority'    => 9,
@@ -1411,8 +1411,8 @@ Kirki::add_field(
 Kirki::add_field('theme_config_id', array(
 	'type'        => 'slider',
 	'settings'    => 'RB_archive_banner_padding',
-	'label'       => esc_html__('Banner Padding', 'rainbow'),
-	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow'),
+	'label'       => esc_html__('Banner Padding', 'rainbow-lite'),
+	'description'       => esc_html__('Set your banner padding[top, bottom]', 'rainbow-lite'),
 	'section'     => 'RB_search_page',
 	'default'     => 85,
 	'choices'     => array(
@@ -1428,10 +1428,10 @@ Kirki::add_field(
 	array(
 		'type'     => 'textarea',
 		'settings' => 'RB_search_title_text_settings',
-		'label'    => esc_html__('Search Title Text Content', 'rainbow'),
+		'label'    => esc_html__('Search Title Text Content', 'rainbow-lite'),
 		'section'  => 'RB_search_page',
 		'default'  => esc_html('Search results for : [search_query]'),
-		'description'  => esc_html__('Set your search title text and use \'[search_query]\' for search query', 'rainbow'),
+		'description'  => esc_html__('Set your search title text and use \'[search_query]\' for search query', 'rainbow-lite'),
 		'priority' => 13,
 	)
 );
@@ -1441,10 +1441,10 @@ Kirki::add_field(
 	array(
 		'type'     => 'textarea',
 		'settings' => 'RB_result_found_text_settings',
-		'label'    => esc_html__('Search Result Found Text Content', 'rainbow'),
+		'label'    => esc_html__('Search Result Found Text Content', 'rainbow-lite'),
 		'section'  => 'RB_search_page',
 		'default'  => esc_html('[search_count] results found.'),
-		'description'  => esc_html__('Set your search result found text and use \'[search_count]\' for result number', 'rainbow'),
+		'description'  => esc_html__('Set your search result found text and use \'[search_count]\' for result number', 'rainbow-lite'),
 		'priority' => 13,
 	)
 );
@@ -1455,20 +1455,20 @@ Kirki::add_field(
 Kirki::add_field('RB_config', [
 	'type'        => 'select',
 	'settings'    => 'RB_footer_layout',
-	'label'       => esc_html__('Footer Layout', 'rainbow'),
+	'label'       => esc_html__('Footer Layout', 'rainbow-lite'),
 	'section'     => 'RB_footer_column',
 	'default'     => '2',
-	'placeholder' => esc_html__('Select your footer layout option', 'rainbow'),
+	'placeholder' => esc_html__('Select your footer layout option', 'rainbow-lite'),
 	'priority'    => 1,
 	'choices'     => [
-		'1' => esc_html__('col-4 | col-4 | col-4', 'rainbow'),
-		'2' => esc_html__('col-3 | col-3 | col-3 | col-3', 'rainbow'),
-		'3' => esc_html__('col-4 | col-2 | col-3 | col-3', 'rainbow'),
-		'4' => esc_html__('col-3 | col-3 | col-2 | col-4', 'rainbow'),
-		'5' => esc_html__('col-6 | col-6', 'rainbow'),
-		'6' => esc_html__('col-4 | col-2 | col-4 | col-2', 'rainbow'),
-		'7' => esc_html__('col-4 | col-3 | col-2 | col-3', 'rainbow'),
-		'8' => esc_html__('col-3 | col-2 | col-4 | col-3', 'rainbow'),
+		'1' => esc_html__('col-4 | col-4 | col-4', 'rainbow-lite'),
+		'2' => esc_html__('col-3 | col-3 | col-3 | col-3', 'rainbow-lite'),
+		'3' => esc_html__('col-4 | col-2 | col-3 | col-3', 'rainbow-lite'),
+		'4' => esc_html__('col-3 | col-3 | col-2 | col-4', 'rainbow-lite'),
+		'5' => esc_html__('col-6 | col-6', 'rainbow-lite'),
+		'6' => esc_html__('col-4 | col-2 | col-4 | col-2', 'rainbow-lite'),
+		'7' => esc_html__('col-4 | col-3 | col-2 | col-3', 'rainbow-lite'),
+		'8' => esc_html__('col-3 | col-2 | col-4 | col-3', 'rainbow-lite'),
 	],
 ]);
 
@@ -1481,7 +1481,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'bodytypography',
-		'label'       => esc_html__('Body Typography', 'rainbow'),
+		'label'       => esc_html__('Body Typography', 'rainbow-lite'),
 		'section'     => 'body',
 		'priority'    => 1,
 		'default'     => array(
@@ -1507,7 +1507,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'page_content',
-		'label'       => esc_html__('Page Content', 'rainbow'),
+		'label'       => esc_html__('Page Content', 'rainbow-lite'),
 		'section'     => 'page_content',
 		'priority'    => 3,
 		'default'     => array(
@@ -1533,7 +1533,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'heading1',
-		'label'       => esc_html__('Heading', 'rainbow'),
+		'label'       => esc_html__('Heading', 'rainbow-lite'),
 		'section'     => 'heading',
 		'priority'    => 5,
 		'default'     => array(
@@ -1559,7 +1559,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'headin2',
-		'label'       => esc_html__('Heading 2', 'rainbow'),
+		'label'       => esc_html__('Heading 2', 'rainbow-lite'),
 		'section'     => 'heading',
 		'priority'    => 7,
 		'default'     => array(
@@ -1585,7 +1585,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'headin3',
-		'label'       => esc_html__('Heading 3', 'rainbow'),
+		'label'       => esc_html__('Heading 3', 'rainbow-lite'),
 		'section'     => 'heading',
 		'priority'    => 9,
 		'default'     => array(
@@ -1611,7 +1611,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'headin4',
-		'label'       => esc_html__('Heading 4', 'rainbow'),
+		'label'       => esc_html__('Heading 4', 'rainbow-lite'),
 		'section'     => 'heading',
 		'priority'    => 11,
 		'default'     => array(
@@ -1637,7 +1637,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'headin5',
-		'label'       => esc_html__('Heading 5', 'rainbow'),
+		'label'       => esc_html__('Heading 5', 'rainbow-lite'),
 		'section'     => 'heading',
 		'priority'    => 13,
 		'default'     => array(
@@ -1663,7 +1663,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'headin6',
-		'label'       => esc_html__('Heading 6', 'rainbow'),
+		'label'       => esc_html__('Heading 6', 'rainbow-lite'),
 		'section'     => 'heading',
 		'priority'    => 15,
 		'default'     => array(
@@ -1689,7 +1689,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'navbar_item',
-		'label'       => esc_html__('Navbar', 'rainbow'),
+		'label'       => esc_html__('Navbar', 'rainbow-lite'),
 		'section'     => 'navbar',
 		'priority'    => 17,
 		'default'     => array(
@@ -1705,7 +1705,7 @@ Kirki::add_field(
 		'transport'   => 'auto',
 		'output'      => array(
 			array(
-				'element' => array('.themeix-menu #main-menu li>a'),
+				'element' => array('.rainbow-menu #main-menu li>a'),
 			),
 		),
 	)
@@ -1715,7 +1715,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'postcard_title',
-		'label'       => esc_html__('Post Title', 'rainbow'),
+		'label'       => esc_html__('Post Title', 'rainbow-lite'),
 		'section'     => 'post_card',
 		'priority'    => 19,
 		'default'     => array(
@@ -1741,7 +1741,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'postcard_meta',
-		'label'       => esc_html__('Post Meta', 'rainbow'),
+		'label'       => esc_html__('Post Meta', 'rainbow-lite'),
 		'section'     => 'post_card',
 		'priority'    => 21,
 		'default'     => array(
@@ -1767,7 +1767,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'typography',
 		'settings'    => 'postcard_cat',
-		'label'       => esc_html__('Post Category', 'rainbow'),
+		'label'       => esc_html__('Post Category', 'rainbow-lite'),
 		'section'     => 'post_card',
 		'priority'    => 23,
 		'default'     => array(
@@ -1798,7 +1798,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'RB_primary_color',
-		'label'       => esc_html__('Primary Color', 'rainbow'),
+		'label'       => esc_html__('Primary Color', 'rainbow-lite'),
 		'section'     => 'colors',
 		'priority'    => 1,
 		'default'     => '#080c21',
@@ -1809,7 +1809,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'RB_secondary_color',
-		'label'       => esc_html__('Secondary Color', 'rainbow'),
+		'label'       => esc_html__('Secondary Color', 'rainbow-lite'),
 		'section'     => 'colors',
 		'priority'    => 2,
 		'default'     => '#4dac4d',
@@ -1820,7 +1820,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'color',
 		'settings'    => 'RB_text_color',
-		'label'       => esc_html__('Text Color', 'rainbow'),
+		'label'       => esc_html__('Text Color', 'rainbow-lite'),
 		'section'     => 'colors',
 		'priority'    => 3,
 		'default'     => '#51535f',
@@ -1834,9 +1834,9 @@ Kirki::add_field(
 	array(
 		'type'        => 'text',
 		'settings'    => 'subscribe_title',
-		'label'       => esc_html__('Title', 'rainbow'),
+		'label'       => esc_html__('Title', 'rainbow-lite'),
 		'section'     => 'footer_subscribe',
-		'default'     => esc_html__('Subscribe', 'rainbow'),
+		'default'     => esc_html__('Subscribe', 'rainbow-lite'),
 		'priority'    => 2,
 	)
 );
@@ -1845,9 +1845,9 @@ Kirki::add_field(
 	array(
 		'type'        => 'textarea',
 		'settings'    => 'subscribe_desc',
-		'label'       => esc_html__('Subtitle', 'rainbow'),
+		'label'       => esc_html__('Subtitle', 'rainbow-lite'),
 		'section'     => 'footer_subscribe',
-		'default'     => esc_html__('Stay up to date! Get all the latest posts delivered straight to your inbox.', 'rainbow'),
+		'default'     => esc_html__('Stay up to date! Get all the latest posts delivered straight to your inbox.', 'rainbow-lite'),
 		'priority'    => 3,
 	)
 );
@@ -1856,7 +1856,7 @@ Kirki::add_field(
 	array(
 		'type'        => 'textarea',
 		'settings'    => 'form_shortcode',
-		'label'       => esc_html__('Form Shortcode', 'rainbow'),
+		'label'       => esc_html__('Form Shortcode', 'rainbow-lite'),
 		'section'     => 'footer_subscribe',
 		'priority'    => 5,
 	)

@@ -14,7 +14,6 @@
     <div class="overlay"></div>
 </section>
 
-
 <section class="main-content" id="content">
     <div class="container">
         <div class="row">

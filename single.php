@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="main-content r-single-page">
+<section class="main-content r-single-page" id="content">
     <div class="container">
         <div class="row">
 
@@ -62,7 +62,7 @@
                                         <?php
                                                 the_content();
                                                 wp_link_pages(array(
-                                                    'before'      => '<div class="single-page-pagination"><div class="single-page-numbers"><span class="page-links-title">' . esc_html__('Pages : ', 'rainbow') . '</span>',
+                                                    'before'      => '<div class="single-page-pagination"><div class="single-page-numbers"><span class="page-links-title">' . esc_html__('Pages : ', 'rainbow-lite') . '</span>',
                                                     'after'       => '</div></div>',
                                                     'separator'   => ' ',
                                                 ));

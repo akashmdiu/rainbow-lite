@@ -6,8 +6,7 @@ function RB_scripts()
     // wp_enqueue_style('font-2', '//fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
     wp_enqueue_style('font-1', '//fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
     wp_enqueue_style('font-2', '//fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-    // wp_enqueue_style('font-2', '//fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap');
-    // wp_enqueue_style('font-2', '//fonts.googleapis.com/css2?family=Texturina:wght@600;700;800&display=swap');
+    
 
     //====================ALL CSS FILE HERE=====================================//
 
@@ -45,6 +44,8 @@ function RB_scripts()
     wp_enqueue_script('custom', RB_JS_URL . '/custom.js', array('jquery'), rand(654, 646469), true);
 
     wp_enqueue_script('fslightbox', RB_JS_URL . '/fslightbox.js', array('jquery'), rand(654, 646469), true);
+
+    wp_enqueue_script('rainbow-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.min.js', array(), rand(654, 646469), true);
 
     if (is_singular()) wp_enqueue_script("comment-reply");
 }

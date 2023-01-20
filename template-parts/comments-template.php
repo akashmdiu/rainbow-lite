@@ -8,7 +8,7 @@
 	else if ( !comments_open() && get_comments_number() ) {?>
         <div class="comments_template">
         <?php comments_template();   ?>
-        <p class="comments-closed"> <?php  esc_html_e('Comments are closed', 'doxylite'); ?> </p>
+        <p class="comments-closed"> <?php  esc_html_e('Comments are closed', 'rainbow-lite'); ?> </p>
         </div>
     <?php
 	}

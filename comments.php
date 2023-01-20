@@ -20,8 +20,8 @@ if (!post_password_required()) { ?>
                                 } ?>">
     <?php
         paginate_comments_links(array(
-            'prev_text' => esc_html__('«', 'rainbow'),
-            'next_text' => esc_html__('»', 'rainbow'),
+            'prev_text' => esc_html__('«', 'rainbow-lite'),
+            'next_text' => esc_html__('»', 'rainbow-lite'),
             'mid_size'  => 3
         ));
     ?>
@@ -31,21 +31,21 @@ if (!post_password_required()) { ?>
 <?php
 
 $comments_args = array(
-    'label_submit' => esc_html__('Add Feedback', 'rainbow'),
-    'title_reply' => esc_html__('Leave a Feedback', 'rainbow'),
+    'label_submit' => esc_html__('Add Feedback', 'rainbow-lite'),
+    'title_reply' => esc_html__('Leave a Feedback', 'rainbow-lite'),
     'comment_notes_after' => '',
     'class_submit' => 'submit_class',
     'fields' => array(
-        'author' => '<div class="row"> <div class="col-md-6"><input type="text" class="form-control" name="author" placeholder="' . esc_attr__('Your Name*', 'rainbow') . '" required /></div>',
-        'email' => '<div class="col-md-6"><input class="form-control" placeholder="' . esc_attr__('Your Email*', 'rainbow') . '" name="email" type="email" required></div></div> ',
+        'author' => '<div class="row"> <div class="col-md-6"><input type="text" class="form-control" name="author" placeholder="' . esc_attr__('Your Name*', 'rainbow-lite') . '" required /></div>',
+        'email' => '<div class="col-md-6"><input class="form-control" placeholder="' . esc_attr__('Your Email*', 'rainbow-lite') . '" name="email" type="email" required></div></div> ',
     ),
-    'comment_field' => '<textarea placeholder="' . esc_attr__('Type Feedback', 'rainbow') . '" class="form-control" id="comment" name="comment" ></textarea>',
+    'comment_field' => '<textarea placeholder="' . esc_attr__('Type Feedback', 'rainbow-lite') . '" class="form-control" id="comment" name="comment" ></textarea>',
     'id_form'           => 'commentform',
     'class_form'      => 'comment-form',
     'id_submit'         => 'submit',
     'class_submit'   => 'btn-style2 btn btn-gradient',
-    'title_reply_to'    => esc_html__('Leave a Reply to %s', 'rainbow'),
-    'cancel_reply_link' => esc_html__('Cancel Reply', 'rainbow'),
+    'title_reply_to'    => esc_html__('Leave a Reply to %s', 'rainbow-lite'),
+    'cancel_reply_link' => esc_html__('Cancel Reply', 'rainbow-lite'),
     'format'            => 'xhtml',
 
 );

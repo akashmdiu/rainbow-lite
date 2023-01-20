@@ -32,7 +32,7 @@
                                         <?php
                                                 the_content();
                                                 wp_link_pages(array(
-                                                    'before'      => '<div class="single-page-pagination"><div class="single-page-numbers"><span class="page-links-title">' . esc_html__('Pages : ', 'doxylite') . '</span>',
+                                                    'before'      => '<div class="single-page-pagination"><div class="single-page-numbers"><span class="page-links-title">' . esc_html__('Pages : ', 'rainbow-lite') . '</span>',
                                                     'after'       => '</div></div>',
                                                     'separator'   => ' ',
                                                 ));
