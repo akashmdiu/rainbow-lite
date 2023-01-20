@@ -1,0 +1,1 @@
+<li class="list-inline-item"> <a href="#" data-bs-toggle="modal" data-bs-target="#rainbowSoicalShare" class="rainbowSoicalShare"><i class="fas fa-share"></i></a></li>

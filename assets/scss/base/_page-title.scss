@@ -1,0 +1,27 @@
+.post-title, .site-title {
+    font-family: var(--font-2);
+    color: #ffffff;
+    font-weight: 700;
+}
+.overlay {
+    opacity: 0.95;
+}
+.meta-data {
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 10px;
+        font-size: 18px;
+        color: #ffffff;
+        line-height: 1.8;
+        svg {
+            padding-right: 5px;
+            font-size: 20px;
+            margin: -2px;
+            margin-right: 0px;
+        }
+        a{
+            color: #ffffff;
+        }
+    }
+}

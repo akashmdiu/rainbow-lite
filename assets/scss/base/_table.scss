@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+    margin-bottom: 30px !important;
+    table-layout: fixed;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    text-align: center;
+
+    tr {
+        border-bottom: 1px solid #ddd !important;
+        line-height: 1.6 !important;
+        th {
+            padding: 15px 12px;
+            border: 1px solid #ddd;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 10px; 
+        }
+    }
+}

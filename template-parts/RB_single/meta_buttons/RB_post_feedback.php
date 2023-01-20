@@ -1,0 +1,1 @@
+<li class="list-inline-item"><a href="#commentform" for="comment"><i class="far fa-comment-alt"></i></a></li>

@@ -1,0 +1,1 @@
+<li class="list-inline-item"><a href="javascript:window.print()"><i class="fas fa-print"></i></a></li>

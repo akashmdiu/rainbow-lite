@@ -1,0 +1,24 @@
+table {
+  width: 100%;
+  margin-bottom: 30px !important;
+  table-layout: fixed;
+  border: 1px solid #ddd;
+  margin-top: 15px;
+  text-align: center;
+}
+
+table tr {
+  border-bottom: 1px solid #ddd !important;
+  line-height: 1.6 !important;
+}
+
+table tr th {
+  padding: 15px 12px;
+  border: 1px solid #ddd;
+}
+
+table tr td {
+  border: 1px solid #ddd;
+  padding-left: 10px;
+}
+/*# sourceMappingURL=table.css.map */
