@@ -74,12 +74,6 @@
                                     <?php get_template_part('template-parts/admin-info'); ?>
                                 <?php endif; ?>
                             </li>
-                            <?php if (function_exists('WC')) : ?>
-                                <li class="rainbow-shopping list-inline-item">
-                                    <a href="<?php echo esc_url(wc_get_cart_url()); ?>" class="shopping-cart"><i class="fas fa-shopping-cart"></i></a>
-                                    <span class="item-count"><?php echo esc_html(RB_get_wc_product_count()); ?></span>
-                                </li>
-                            <?php endif; ?>
                         </ul>
                     </nav> <!-- navbar -->
                 </div>
